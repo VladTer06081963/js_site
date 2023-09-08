@@ -3,26 +3,29 @@
 }
 
 
-/* Стили для основного содержания страницы */
+
 .content{
     position: absolute;
     top: 0;
     right: 0;
-    left:0px;
-    margin-left: 250px; /* Учитывать ширину боковой панели */
-    padding: 10px;
+    left:250px;
+  
+    /* margin-left: 250px; Учитывать ширину боковой панели */
+    /* padding: 10px; */
 }
 
 /* Стили для боковой панели */
 .sidebar {
     width: 250px; /* Ширина боковой панели */
     background-color: #8e8e8ee9; /* Цвет фона */
-    color: #fff; /* Цвет текста */
+    /* color: #fff; Цвет текста */
     position: fixed; /* Зафиксированное позиционирование */
     top: 0;
+    z-index: 100;
     left: 0;
     height: 100%; /* Высота на всю страницу */
-    overflow: auto; /* Добавление полосы прокрутки, если содержимое превышает высоту боковой панели */
+    box-shadow: inset -1px 0 0 rgba((0)0, 0, .1);
+    overflow-y: auto; /* Добавление полосы прокрутки, если содержимое превышает высоту боковой панели */
 }
 
 /* Стили для элементов списка меню */
@@ -30,10 +33,10 @@
 
 
 
-.sidebar ul li a {
+/* .sidebar ul li a {
     text-decoration: none;
     color: #fff;
-}
+} */
 
 
 
