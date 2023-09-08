@@ -17,7 +17,7 @@
 /* Стили для боковой панели */
 .sidebar {
     width: 250px; /* Ширина боковой панели */
-    background-color: #8e8e8ee9; /* Цвет фона */
+    background-color: #100f0fe9; /* Цвет фона */
     /* color: #fff; Цвет текста */
     position: fixed; /* Зафиксированное позиционирование */
     top: 0;

@@ -1,5 +1,6 @@
 const model = [
     {type: 'title', value: 'Hello World from JS_site'},
+    {type: 'image', value: './assets/fireball.jpeg'},
     {type: 'text', value: 'This is paragraff text'},
     {type: 'columns', value: [
         '111111111111',
@@ -7,6 +8,7 @@ const model = [
         '3333333333333',
         '555555555555'
     ]}
+    
 ]
 
 const $site = document.querySelector('#site')
@@ -21,6 +23,8 @@ html = title(block)
 } else if(block.type === 'columns') {
 html = columns(block)
 
+} else if (block.type=== 'image') {
+    html =image(block)
 }
 $site.insertAdjacentHTML('beforeend', html)
 }) 
@@ -38,9 +42,9 @@ function title(block) {
 function text(block) {
     return `
     <div class="row">              
-     <div class="col-sm">
+    
         <h1>${block.value}</h1>
-     </div>
+    
     </div>
     `
 }
@@ -52,6 +56,14 @@ const html = block.value.map(item => `<div class="col-sm">${item}</div>`)
 <div class="row">              
     ${html.join('')}       
 </div>
+    `
+}
+ 
+function image(block) {
+    return `
+    <div class="row">
+    <img src="${block.value}"/>
+    </div>
     `
 }
 
