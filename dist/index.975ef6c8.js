@@ -733,14 +733,14 @@ const templates = {
     columns
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./utils":"en4he"}],"en4he":[function(require,module,exports) {
+},{"./utils":"en4he","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"en4he":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "row", ()=>row);
 parcelHelpers.export(exports, "col", ()=>col);
 parcelHelpers.export(exports, "css", ()=>css);
 function row(content, styles = "") {
-    return `<div class="row" styles="${styles}">${content}</div>`;
+    return `<div class="row" style="${styles}">${content}</div>`;
 }
 function col(content) {
     return `<div class="col-sm">${content}</div>`;
