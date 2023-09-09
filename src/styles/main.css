@@ -8,16 +8,18 @@
     position: absolute;
     top: 0;
     right: 0;
-    left:250px;
+    left:200px;
+    text-align: center;
   
     /* margin-left: 250px; Учитывать ширину боковой панели */
-    /* padding: 10px; */
+    padding: 0px;
 }
 
 /* Стили для боковой панели */
 .sidebar {
-    width: 250px; /* Ширина боковой панели */
-    background-color: #100f0fe9; /* Цвет фона */
+    width: 200px; /* Ширина боковой панели */
+    background-color: #100f0fe9; 
+    /* Цвет фона */
     /* color: #fff; Цвет текста */
     position: fixed; /* Зафиксированное позиционирование */
     top: 0;
@@ -33,10 +35,10 @@
 
 
 
-/* .sidebar ul li a {
+ .sidebar ul li a {
     text-decoration: none;
     color: #fff;
-} */
+} 
 
 
 
